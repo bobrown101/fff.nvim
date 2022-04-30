@@ -1,6 +1,5 @@
-## minimal-nnn.nvim
-
-The most minimal [nnn](https://github.com/jarun/nnn) plugin for neovim ever
+## fff.nvim
+A dead simple [fff](https://github.com/dylanaraps/fff) plugin for neovim
 
 ![demo gif](demo.gif)
 
@@ -8,12 +7,12 @@ The most minimal [nnn](https://github.com/jarun/nnn) plugin for neovim ever
 ```lua
 
     -- in your packer config
-    use({"bobrown101/minimal-nnn.nvim"})
+    use({"bobrown101/fff.nvim"})
 
     -- tied to a keymap of your choice
-    require("minimal-nnn").start()
+    require("fff").start()
 
 ```
 
 ## Description
-Made possible by nvim --remote, we start up an nnn picker in a standard neovim terminal, and "callback" the result to the current neovim instance.
+"fff" run with "-p" will output the result to ~/.cache/fff/opened_file. Upon exit we read the file, and open it
